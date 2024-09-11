@@ -1,0 +1,143 @@
+Basics of Logic Gates (Referenced from GeekforGeeks)
+
+Logic gates are the fundamental building blocks of digital circuits. Each gate performs a basic logical function that is essential for digital computation.
+
+
+AND Gate: Outputs true (1) only if both inputs are true (1).
+
+Symbol: ⩓
+Truth Table:
+A	B	A AND B
+0	0	0
+0	1	0
+1	0	0
+1	1	1
+
+
+OR Gate: Outputs true (1) if at least one input is true (1).
+
+Symbol: ⩔
+Truth Table:
+A	B	A OR B
+0	0	0
+0	1	1
+1	0	1
+1	1	1
+
+
+NOT Gate: Outputs the opposite of the input (inverts the input).
+
+Symbol: ¬ or ⩚
+Truth Table:
+A	NOT A
+0	1
+1	0
+
+
+NAND Gate: Outputs true (1) if at least one input is false (0); it is the inverse of the AND gate.
+
+Symbol: ⩓'
+Truth Table:
+A	B	A NAND B
+0	0	1
+0	1	1
+1	0	1
+1	1	0
+
+NOR Gate: Outputs true (1) only if both inputs are false (0); it is the inverse of the OR gate.
+
+Symbol: ⩔'
+Truth Table:
+A	B	A NOR B
+0	0	1
+0	1	0
+1	0	0
+1	1	0
+
+XOR Gate: Outputs true (1) if the number of true inputs is odd.
+
+Symbol: ⊻
+Truth Table:
+A	B	A XOR B
+0	0	0
+0	1	1
+1	0	1
+1	1	0
+
+2. Boolean Expressions and Truth Tables
+Boolean algebra is used to simplify logic circuits. Expressions can be simplified using Boolean laws and theorems.
+
+3. Combinational Circuits
+Combinational circuits are circuits where the output is a function of the current inputs only. They do not have memory.
+
+Encoder: Converts binary information from 2^n lines to an n-bit binary code.
+
+Example: 4-to-2 binary encoder.
+Decoder: Converts n-bit binary information to 2^n lines.
+
+Example: 2-to-4 line decoder.
+Multiplexer (MUX): Selects one of many inputs and forwards the selected input to the output.
+
+Example: 4-to-1 MUX with 4 inputs and 2 selection lines.
+Demultiplexer (DEMUX): Routes a single input to one of many outputs.
+
+Example: 1-to-4 DEMUX.
+Example of a 4-to-1 MUX:
+
+Inputs: I0, I1, I2, I3
+Select lines: S0, S1
+Output: Y
+
+4. Sequential Circuits: Flip-Flops, Registers, and Counters
+Sequential circuits have memory and depend on previous states.
+
+Flip-Flops: Basic memory elements that store one bit of data.
+
+D Flip-Flop: Captures the value of the data input (D) at the rising edge of the clock signal.
+Truth Table:
+D	Q (t+1)
+0	0
+1	1
+Registers: Collections of flip-flops used to store multiple bits of data.
+
+Example: 4-bit register can store a 4-bit binary number.
+Counters: Sequential circuits that count pulses and can be designed as up or down counters.
+
+Example: 4-bit binary counter counts from 0 to 15 in binary.
+Example: 4-bit binary counter circuit can be implemented using flip-flops where each flip-flop represents a bit.
+
+Summary
+Logic Gates: Fundamental building blocks for digital circuits with specific logical functions.
+Boolean Algebra: Used for simplifying expressions and designing circuits.
+Combinational Circuits: Perform operations based on current inputs (e.g., MUX, DEMUX).
+Sequential Circuits: Have memory and operate based on input and previous state (e.g., flip-flops, registers).
+
+
+
+// Theory 
+
+Logic gates are fundamental building blocks in digital electronics. They perform basic logical functions that are essential for any digital circuit.
+
+AND Gate: An AND gate outputs 1 (true) only when all its inputs are 1. If any input is 0, the output will be 0. This is like a condition where all criteria must be met.
+
+OR Gate: An OR gate outputs 1 if at least one of its inputs is 1. It only outputs 0 when all inputs are 0. This gate checks if at least one condition is true.
+
+NOT Gate: A NOT gate, or inverter, outputs the opposite value of its input. If the input is 1, the output is 0, and vice versa. It flips the signal it receives.
+
+NAND Gate: A NAND gate is a combination of an AND gate followed by a NOT gate. It outputs 0 only when all inputs are 1; otherwise, it outputs 1. It is widely used in creating other types of logic gates.
+
+NOR Gate: A NOR gate is an OR gate followed by a NOT gate. It outputs 1 only when all inputs are 0; otherwise, it outputs 0. It's used in a variety of digital circuits.
+
+XOR Gate (Exclusive OR): An XOR gate outputs 1 only when the inputs are different (one is 1 and the other is 0). If both inputs are the same, it outputs 0. It is useful in arithmetic circuits.
+
+Creating Useful Circuits with Logic Gates (Referenced from GeekforGeeks)
+Encoders and Decoders: Encoders convert multiple input signals into a coded output signal. Decoders do the opposite, converting coded inputs into multiple outputs. They are commonly used in data transmission.
+
+Multiplexers (MUX) and Demultiplexers (DEMUX): A multiplexer selects one input from several data inputs and forwards it to a single output line. A demultiplexer takes a single input and directs it to one of many output lines. These are crucial for efficient data handling in digital systems.
+
+Understanding Sequential Circuits (Referenced from GeekforGeeks)
+Flip-Flops: These are basic memory units in digital circuits that store one bit of data. They are used in various storage and memory devices and can be triggered by a clock signal to change states.
+
+Registers: Registers are small storage locations within the CPU that hold data temporarily for quick access. They help in performing computations quickly and efficiently.
+
+Counters: Counters keep track of the number of occurrences of events. They can count up, down, or in any predefined sequence and are essential in applications like clocks, timers, and digital devices.
